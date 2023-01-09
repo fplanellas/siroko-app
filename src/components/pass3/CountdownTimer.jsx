@@ -27,7 +27,7 @@ export const CountdownTimer = () => {
       setTimer(
         (minutes > 9 ? minutes : "0" + minutes) +
           ":" +
-          (seconds > 9 ? seconds : 0 + seconds)
+          (seconds > 9 ? seconds : "0" + seconds)
       );
     } else {
       clearInterval(intervalRef.current);
